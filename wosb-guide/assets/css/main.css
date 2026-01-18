@@ -1,0 +1,54 @@
+/* ============================
+   GLOBAL NAVIGATION MENU
+   ============================ */
+
+/* 공통 링크 스타일 */
+.nav-link {
+  @apply text-gray-700 hover:text-primary transition-colors;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* 데스크탑 드롭다운 메뉴 */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.relative.group:hover .dropdown-menu {
+  display: block;
+}
+
+/* 드롭다운 내부 링크 */
+.dropdown-menu a {
+  @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100;
+}
+
+/* ============================
+   MOBILE MENU
+   ============================ */
+
+.mobile-link {
+  @apply block px-4 py-3 text-gray-700 hover:bg-gray-100;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* 모바일 드롭다운 */
+.mobile-submenu {
+  @apply bg-gray-50 border-l border-gray-200;
+}
+
+.mobile-submenu a {
+  @apply block px-6 py-2 text-gray-700 hover:bg-gray-200;
+}
